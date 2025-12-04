@@ -74,6 +74,12 @@
         "source": "Premium"
     },
     {
+        "name": "Armor",
+        "image": "armor",
+        "defaultLightness": 100,
+        "source": "Premium"
+    },
+    {
         "name": "Bamboo",
         "image": "bamboo",
         "source": "Shard"
@@ -446,6 +452,12 @@
         "image": "cemetery",
         "defaultLightness": 100,
         "source": "Event Frame Chest"
+    },
+    {
+        "name": "Coffee",
+        "image": "coffee",
+        "defaultLightness": 100,
+        "source": "Premium"
     },
     {
         "name": "Dark",
