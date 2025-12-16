@@ -959,6 +959,12 @@
         "source": "Premium"
     },
     {
+        "name": "Icebound",
+        "image": "icebound",
+        "defaultLightness": 100,
+        "source": "Premium"
+    },
+    {
         "name": "Jade",
         "image": "jade",
         "defaultLightness": 100,
