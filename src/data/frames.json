@@ -460,6 +460,12 @@
         "source": "Premium"
     },
     {
+        "name": "Cozy Cabin",
+        "image": "cozy-cabin",
+        "defaultLightness": 0,
+        "source": "Event Frame Chest"
+    },
+    {
         "name": "Dark",
         "image": "dark",
         "defaultLightness": 100,
@@ -829,6 +835,12 @@
         "source": "Shard"
     },
     {
+        "name": "Gift",
+        "image": "gift",
+        "defaultLightness": 100,
+        "source": "Premium"
+    },
+    {
         "name": "Hacker",
         "image": "hacker",
         "defaultLightness": 100,
@@ -962,6 +974,12 @@
         "name": "Icebound",
         "image": "icebound",
         "defaultLightness": 100,
+        "source": "Premium"
+    },
+    {
+        "name": "Icy",
+        "image": "icy",
+        "defaultLightness": 0,
         "source": "Premium"
     },
     {
@@ -1309,6 +1327,18 @@
         "source": "Premium"
     },
     {
+        "name": "Nice List",
+        "image": "nice-list",
+        "defaultLightness": 0,
+        "source": "Event Frame Chest"
+    },
+    {
+        "name": "New Year Party",
+        "image": "new-year-party",
+        "defaultLightness": 100,
+        "source": "Premium"
+    },
+    {
         "name": "Omamori",
         "image": "omamori",
         "source": "Premium"
@@ -1349,6 +1379,12 @@
         "defaultLightness": 100,
         "hideSeries": true,
         "swapNameAndSeries": true,
+        "source": "Premium"
+    },
+    {
+        "name": "Ornament",
+        "image": "ornament",
+        "defaultLightness": 100,
         "source": "Premium"
     },
     {
@@ -1885,10 +1921,24 @@
         "source": "Premium"
     },
     {
+        "name": "Snow Crystal",
+        "image": "snow-crystal",
+        "hideSeries": true,
+        "swapNameAndSeries": true,
+        "source": "Event",
+        "defaultLightness": 100
+    },
+    {
         "name": "Spooky House",
         "image": "spooky-house",
         "source": "Event",
         "defaultLightness": 100
+    },
+    {
+        "name": "Snowstorm",
+        "image": "snowstorm",
+        "defaultLightness": 0,
+        "source": "Premium"
     },
     {
         "name": "Tarot",
@@ -2160,10 +2210,22 @@
         "source": "Premium"
     },
     {
+        "name": "Winter Village",
+        "image": "winter-village",
+        "defaultLightness": 0,
+        "source": "Event Frame Chest"
+    },
+    {
         "name": "Xeno",
         "image": "xeno",
         "defaultLightness": 100,
         "source": "Premium"
+    },
+    {
+        "name": "Yeti",
+        "image": "yeti",
+        "defaultLightness": 0,
+        "source": "Event Frame Chest"
     },
     {
         "name": "Zombie",
