@@ -80,6 +80,12 @@
         "source": "Premium"
     },
     {
+        "name": "Apocalypse",
+        "image": "apocalypse",
+        "defaultLightness": 100,
+        "source": "Premium"
+    },
+    {
         "name": "Bamboo",
         "image": "bamboo",
         "source": "Shard"
@@ -464,6 +470,12 @@
         "image": "cozy-cabin",
         "defaultLightness": 0,
         "source": "Event Frame Chest"
+    },
+    {
+        "name": "Crab",
+        "image": "crab",
+        "defaultLightness": 100,
+        "source": "Monthly"
     },
     {
         "name": "Dark",
@@ -1384,6 +1396,12 @@
     {
         "name": "Ornament",
         "image": "ornament",
+        "defaultLightness": 100,
+        "source": "Premium"
+    },
+    {
+        "name": "Origami",
+        "image": "origami",
         "defaultLightness": 100,
         "source": "Premium"
     },
