@@ -478,6 +478,12 @@
         "source": "Monthly"
     },
     {
+        "name": "Creepy",
+        "image": "creepy",
+        "defaultLightness": 0,
+        "source": "Premium"
+    },
+    {
         "name": "Dark",
         "image": "dark",
         "defaultLightness": 100,
