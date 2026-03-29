@@ -10,10 +10,17 @@ import DialogContent from '@mui/material/DialogContent';
 import DialogTitle from '@mui/material/DialogTitle';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import FormGroup from '@mui/material/FormGroup';
+import InputAdornment from '@mui/material/InputAdornment';
+import TextField from '@mui/material/TextField';
 import Typography from '@mui/material/Typography';
 
 // MUI Icons
 import ExpandMoreRoundedIcon from '@mui/icons-material/ExpandMoreRounded';
+import SearchRoundedIcon from '@mui/icons-material/SearchRounded';
+import ClearRoundedIcon from '@mui/icons-material/ClearRounded';
+
+// MUI Other
+import IconButton from '@mui/material/IconButton';
 
 // Other Components
 import { DialogCloseButton } from '../../Generic/DialogCloseButton';
@@ -41,14 +48,19 @@ export const FrameDialog = ({
 }) => {
     const frames = useSelector(selectAllFrames);
     const [frameFilters, setFrameFilters] = useState(allFrameSources);
+    const [searchQuery, setSearchQuery] = useState('');
 
     const framesByAlpha = useMemo(() => {
         const includeAllFrames = frameFilters.length === allFrameSources.length;
+        const normalizedSearch = searchQuery.trim().toLowerCase();
         const frameMapDividedByAlpha = frames.reduce((acc, curr) => {
             const frameName = curr.name;
             const firstLetter = frameName[0].toUpperCase();
 
-            if (includeAllFrames || frameFilters.includes(curr.source)) {
+            const matchesSource = includeAllFrames || frameFilters.includes(curr.source);
+            const matchesSearch = !normalizedSearch || frameName.toLowerCase().includes(normalizedSearch);
+
+            if (matchesSource && matchesSearch) {
                 if (!acc.has(firstLetter)) {
                     acc.set(firstLetter, [curr]);
                 }
@@ -71,7 +83,7 @@ export const FrameDialog = ({
         const frameMapSortedByAlpha = new Map(sortedEntries.sort(([aKey], [bKey]) => aKey.localeCompare(bKey)));
 
         return frameMapSortedByAlpha;
-    }, [frames, frameFilters]);
+    }, [frames, frameFilters, searchQuery]);
     const frameLetters = useMemo(() => Array.from(framesByAlpha.keys()), [framesByAlpha]);
 
     const allChecked = frameFilters.length === allFrameSources.length;
@@ -134,6 +146,37 @@ export const FrameDialog = ({
                     overflow: 'visible',
                 }}
             >
+                <TextField
+                    fullWidth
+                    placeholder='Search frames by name...'
+                    size='small'
+                    value={searchQuery}
+                    onChange={(e) => setSearchQuery(e.target.value)}
+                    InputProps={{
+                        startAdornment: (
+                            <InputAdornment position='start'>
+                                <SearchRoundedIcon />
+                            </InputAdornment>
+                        ),
+                        endAdornment: searchQuery && (
+                            <InputAdornment position='end'>
+                                <IconButton
+                                    size='small'
+                                    onClick={() => setSearchQuery('')}
+                                    edge='end'
+                                >
+                                    <ClearRoundedIcon fontSize='small' />
+                                </IconButton>
+                            </InputAdornment>
+                        ),
+                    }}
+                    sx={{
+                        my: 0.5,
+                        '& .MuiOutlinedInput-root': {
+                            borderRadius: '8px',
+                        },
+                    }}
+                />
                 <Accordion
                     className='frame-dialog-section-accordion'
                     disableGutters
@@ -185,6 +228,18 @@ export const FrameDialog = ({
                     </FormGroup>
                     </AccordionDetails>
                 </Accordion>
+                {
+                    frameLetters.length === 0 && searchQuery.trim() && (
+                        <Typography
+                            variant='body1'
+                            color='text.secondary'
+                            textAlign='center'
+                            sx={{ py: 4 }}
+                        >
+                            No frames found matching "{searchQuery.trim()}"
+                        </Typography>
+                    )
+                }
                 {
                     frameLetters.map((letter) => (
                         <FrameSection

@@ -86,6 +86,12 @@
         "source": "Premium"
     },
     {
+        "name": "Astral",
+        "image": "astral",
+        "defaultLightness": 100,
+        "source": "Premium"
+    },
+    {
         "name": "Bamboo",
         "image": "bamboo",
         "source": "Shard"
@@ -484,6 +490,20 @@
         "source": "Premium"
     },
     {
+        "name": "Coquette",
+        "image": "coquette",
+        "defaultLightness": 0,
+        "swapNameAndSeries": true,
+        "hideSeries": true,
+        "source": "Premium"
+    },
+    {
+        "name": "Collage",
+        "image": "collage",
+        "defaultLightness": 0,
+        "source": "Event Frame Chest"
+    },
+    {
         "name": "Dark",
         "image": "dark",
         "defaultLightness": 100,
@@ -721,6 +741,12 @@
         "defaultLightness": 0
     },
     {
+        "name": "Fantasy",
+        "image": "fantasy",
+        "source": "Premium",
+        "defaultLightness": 0
+    },
+    {
         "name": "Fireworks Stand",
         "image": "fireworks-stand",
         "defaultLightness": 0,
@@ -767,6 +793,14 @@
         "image": "fishing",
         "defaultLightness": 0,
         "source": "Premium"
+    },
+    {
+        "name": "Flower Lattice",
+        "image": "flower-lattice",
+        "hideSeries": true,
+        "swapNameAndSeries": true,
+        "source": "Event",
+        "defaultLightness": 0
     },
     {
         "name": "Gingerbread",
@@ -944,6 +978,14 @@
         "source": "Premium"
     },
     {
+        "name": "Hongbao",
+        "image": "hongbao",
+        "defaultLightness": 0,
+        "hideSeries": true,
+        "swapNameAndSeries": true,
+        "source": "Premium"
+    },
+    {
         "name": "Ice",
         "image": "ice",
         "defaultLightness": 100,
@@ -997,6 +1039,12 @@
     {
         "name": "Icy",
         "image": "icy",
+        "defaultLightness": 0,
+        "source": "Premium"
+    },
+    {
+        "name": "Icing",
+        "image": "icing",
         "defaultLightness": 0,
         "source": "Premium"
     },
@@ -1090,6 +1138,12 @@
         "source": "Gold"
     },
     {
+        "name": "Kiss Print",
+        "image": "kiss-print",
+        "defaultLightness": 100,
+        "source": "Event Frame Chest"
+    },
+    {
         "name": "Lagoon",
         "image": "lagoon",
         "defaultLightness": 100,
@@ -1175,6 +1229,12 @@
         "name": "Log",
         "image": "log",
         "defaultLightness": 0,
+        "source": "Event Frame Chest"
+    },
+    {
+        "name": "Lovebud",
+        "image": "lovebud",
+        "defaultLightness": 100,
         "source": "Event Frame Chest"
     },
     {
@@ -1655,6 +1715,12 @@
         "source": "Event Frame Chest"
     },
     {
+        "name": "Royal Fantasy",
+        "image": "royal-fantasy",
+        "defaultLightness": 100,
+        "source": "Premium"
+    },
+    {
         "name": "Samurai",
         "image": "samurai",
         "defaultLightness": 100,
@@ -1965,6 +2031,12 @@
         "source": "Premium"
     },
     {
+        "name": "Spring Puddle",
+        "image": "spring-puddle",
+        "defaultLightness": 0,
+        "source": "Event Frame Chest"
+    },
+    {
         "name": "Tarot",
         "image": "tarot",
         "defaultLightness": 100,
@@ -2143,6 +2215,12 @@
     {
         "name": "Vampire Hunter",
         "image": "vampire-hunter",
+        "source": "Premium",
+        "defaultLightness": 100
+    },
+    {
+        "name": "Veranda",
+        "image": "veranda",
         "source": "Premium",
         "defaultLightness": 100
     },
