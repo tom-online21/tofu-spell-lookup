@@ -583,6 +583,12 @@
         "source": "Premium"
     },
     {
+        "name": "Dreamy",
+        "image": "dreamy",
+        "defaultLightness": 0,
+        "source": "Premium"
+    },
+    {
         "name": "Earth",
         "image": "earth",
         "defaultLightness": 100,
@@ -631,6 +637,12 @@
         "swapNameAndSeries": true,
         "source": "Event",
         "defaultLightness": 100
+    },
+    {
+        "name": "Erotic",
+        "image": "erotic",
+        "defaultLightness": 0,
+        "source": "Premium"
     },
     {
         "name": "Fall",
@@ -801,6 +813,14 @@
         "swapNameAndSeries": true,
         "source": "Event",
         "defaultLightness": 0
+    },
+    {
+        "name": "Fairy",
+        "image": "fairy",
+        "defaultLightness": 0,
+        "hideSeries": true,
+        "swapNameAndSeries": true,
+        "source": "Premium"
     },
     {
         "name": "Gingerbread",
@@ -1719,6 +1739,14 @@
         "image": "royal-fantasy",
         "defaultLightness": 100,
         "source": "Premium"
+    },
+    {
+        "name": "Rune",
+        "image": "rune",
+        "source": "Monthly",
+        "hideSeries": true,
+        "defaultLightness": 100,
+        "swapNameAndSeries": true
     },
     {
         "name": "Samurai",
